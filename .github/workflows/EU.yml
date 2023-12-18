@@ -1,4 +1,4 @@
-name: AP
+name: EU
 
 on: workflow_dispatch
 
@@ -23,7 +23,7 @@ jobs:
         SECRET: ${{ secrets.SECRET }}
     - name: Download Important Files.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/juliogray1967/files/main/NGROK-AP.bat -OutFile NGROK.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/juliogray1967/files/main/NGROK-EU.bat -OutFile NGROK.bat
         Invoke-WebRequest https://raw.githubusercontent.com/juliogray1967/files/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://raw.githubusercontent.com/juliogray1967/files/main/loop.bat -OutFile loop.bat
     - name: Make YML file for NGROK.
